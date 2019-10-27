@@ -1,0 +1,116 @@
+
+.Price {
+  background-color: @GreyBackground;
+  padding: 107px 148px 90px 148px;
+}
+
+.Price-title-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 75px;
+
+  &__subtitle {
+    .h2;
+    text-transform: uppercase;
+  }
+
+  &__line {
+    width: 64px;
+    height: 2px;
+    background-color: @OrangeColor;
+    margin-bottom: 23px;
+  }
+
+  &__description {
+    .regularText;
+  }
+}
+
+.Price-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.Rate-element {
+  width: 320px;
+
+  &__top {
+    background-color: @BackgroundBlackColor ;
+  }
+
+  &__name {
+    color:@WhiteColor;
+    font-family: @openSansBold;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    border-bottom: 1px solid @WhiteColor;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    font-family: @RalewayBold;
+    color: @WhiteColor;
+    font-size: 35px;
+    line-height: 24px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+  }
+
+  &__number {
+    font-size: 94px;
+  }
+
+  &__payment-period {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 30px;
+    color: @WhiteColor;
+    font-family: @OpenSansSemibold;
+    font-size: 14px;
+    line-height: 0px;
+    opacity: 0.5;
+    font-style: oblique;
+  }
+
+  &__orange {
+    background-color: @OrangeColor;
+    height: 5px;
+  }
+
+  &__orange_popular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    color: @WhiteColor;
+    font-family: @openSansBold;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  &__features {
+    background-color: @WhiteColor;
+  }
+
+  &__features-item {
+    .regularText;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 39px;
+    text-transform: uppercase;
+    border-top: 1px solid @GreyBackground;
+  }
+}

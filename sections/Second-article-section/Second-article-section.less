@@ -1,0 +1,39 @@
+.Second-article-section {
+  display: flex;
+  justify-content: space-between;
+  background-color: @GreyBackground;
+  padding: 108px 148px 73px 148px;
+
+  &__block {
+    width: 474px;
+  }
+
+  &__subtitle {
+    .h5;
+    color: @TitleBlackColor;
+    margin-bottom: 20px;
+  }
+
+  &__line {
+    width: 64px;
+    height: 2px;
+    background-color: @OrangeColor;
+    margin-bottom: 15px;
+  }
+
+  &__article {
+    .regularText;
+
+    &_one {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__image {
+    width: 525px;
+    height: 375px;
+    background:  url("../../images/image_right_standard.png") center no-repeat;
+    position: relative;
+    right: -60px;
+  }
+}

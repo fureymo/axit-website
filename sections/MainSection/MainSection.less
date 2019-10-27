@@ -1,0 +1,130 @@
+
+.Main-section {
+  padding: 106px 148px 136px 148px;
+  background: black;
+  position: relative;
+
+
+  &:before {
+    background: url(../../images/Background-header.png) center no-repeat;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.5;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+}
+
+.Description {
+  width: 516px;
+
+  &__logo {
+    background: url(../../images/Logo-header.png) center no-repeat ;
+    background-size: 176px 60px;
+    height: 61px;
+    width: 177px;
+    margin-bottom: 31px;
+  }
+
+  &__subtitle {
+    .h1;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  &__line {
+    width: 65px;
+    border-top: 2px solid @WhiteColor;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    font-family: @RalewayLight;
+    color: #a4a5a8;
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 45px;
+  }
+
+  &__button {
+    padding: 13px 0;
+    border: 2px solid @WhiteColor;
+    color: @WhiteColor;
+    width: 135px;
+    text-align: center;
+    font-family: @OpenSansSemibold;
+    font-size: 15px;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+  }
+}
+
+.Form {
+  width: 360px;
+  margin-top: 60px;
+  border-radius: 5px;
+  overflow: hidden;
+
+  &__subtitle {
+    width: 360px;
+    background-color: @GreyBackground;
+    font-family: @openSansBold;
+    color: @BackgroundBlackColor;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0;
+  }
+  &__free-word {
+    text-transform: uppercase;
+    color: @OrangeColor;
+  }
+
+  &__input-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 35px 50px 40px;
+    background-color: @WhiteColor;
+    box-sizing: border-box;
+    width: 360px;
+    height: 250px;
+    text-align: center;
+    font-family: @OpenSansRegular ;
+    font-size: 15px;
+    color: @InputTextGreyColor;
+  }
+
+  &__button {
+    width:360px;
+    text-align: center;
+    background-color: #ff9b51;
+    color: @WhiteColor;
+    font-family: @OpenSansSemibold;
+    font-size: 15px;
+    padding: 21px 0;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__input {
+    box-sizing: border-box;
+    padding: 10px 13px;
+    height: 30px;
+    display: block;
+    width: 100%;
+    border-top: none;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid #fbfbfb;
+    border-left: 1px solid #fbfbfb;
+  }
+}

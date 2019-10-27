@@ -1,0 +1,76 @@
+.Contact-us {
+  padding: 106px 148px 92px 148px;
+}
+
+.Contact-us-title-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 84px;
+
+  &__subtitle {
+    .h2;
+    text-transform: uppercase;
+
+  }
+
+  &__line {
+    width: 64px;
+    height: 2px;
+    background-color: @OrangeColor;
+    margin-bottom: 33px;
+  }
+
+  &__description {
+    .regularText;
+  }
+}
+
+.Contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__block {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  &__name-block {
+    margin-right: 62px;
+  }
+
+  &__input {
+    .regularText;
+    width: 450px;
+    display: block;
+    color: @InputTextGreyColor;
+    border: none;
+    border-bottom: 2px solid @InputTextGreyColor;
+
+    &_margin-bottom {
+      margin-bottom: 35px;
+
+    }
+
+    &_textarea {
+      resize: none;
+      height: 100%;
+      box-sizing: border-box;
+    }
+  }
+  &__button {
+    padding: 15px 21px;
+    color: @WhiteColor;
+    font-family: @OpenSansSemibold;
+    font-size: 15px;
+    line-height: 20px;
+    background-color: @OrangeColor;
+    width: 145px;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 3px 6px -3px @BackgroundFooterColor;
+    cursor: pointer;
+    border: 0;
+  }
+}

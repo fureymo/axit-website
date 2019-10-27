@@ -1,0 +1,168 @@
+/*
+Новая секция:
+1. Создать папку в ./sections
+2. Создаем html-файл для секции
+3. Переносим в созданный html-файл весь html-код, относящийся к секции
+4. Вместо вырезанного блока вставляем блок
+<link rel="import" href="sections/<имя папки>/<имя файла>.html" />
+5. Создаем less-файл для секции
+6. Переносим в созданный less-файл весь less-код, относящийся к секции
+7. Вместо вырезанного блока вставляем код
+@import "./sections/<имя папки>/<имя файла>"; // расширение .less добавлять необязательно
+8. Поправить ссылки на картинки (если потребуется)
+ */
+
+
+@import "./styles/init";
+
+@import "./sections/MainSection/MainSection";
+@import "./sections/Social-media/Social-media";
+@import "./sections/Tabs-section/Tabs-section";
+@import "./sections/First-article-section/First-article-section";
+@import "./sections/Second-article-section/Second-article-section";
+@import "./sections/Awesome/Awesome";
+@import "./sections/Price/Price";
+@import "./sections/Testimonial/Testimonial";
+@import "./sections/Stylish-design/Stylish-design";
+@import "./sections/Contact-us/Contact-us";
+
+.Navigation {
+  .padded;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 87px;
+
+  &__logo {
+    background: url(./images/Logo.png) center no-repeat ;
+    height: 27px;
+    width: 78px;
+  }
+}
+
+.Menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+
+  &__element {
+    list-style: none;
+    margin-right: 45px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #c9c9c9;
+    font-family: @OpenSansSemibold ;
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*.Stylish-design {
+  padding: 70px 148px 61px 148px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  &:before {
+    background: url(./images/Background-stylish.png) center no-repeat;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.4;
+  }
+
+  &__subtitle {
+    .h2;
+    color:@WhiteColor;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    z-index: 1;
+  }
+
+  &__line {
+    width: 64px;
+    height: 2px;
+    background-color: @WhiteColor;
+    margin-bottom: 30px;
+    z-index: 1;
+  }
+
+  &__description {
+    font-family: @RalewayRegular;
+    font-size: 16px;
+    color: @WhiteColor;
+    opacity: 0.8;
+    margin-bottom: 35px;
+    z-index: 1;
+  }
+
+  &__button {
+    padding: 8px 0;
+    border: 2px solid @WhiteColor;
+    color: @WhiteColor;
+    width: 135px;
+    text-align: center;
+    font-family: @OpenSansSemibold;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 1;
+  }
+}*/
+
+
+
+
+
+.Footer {
+  padding: 21px 148px 13px 148px;
+  background-color: @BackgroundFooterColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__icons {
+    margin-bottom: 11px;
+  }
+
+  &__icon {
+    margin-right: 30px;
+    font-size: 24px;
+    color: @GreyIconsColor;
+    text-decoration: none;
+    margin-bottom: 11px;
+  }
+
+  &__copyright {
+    font-family: @OpenSansRegular;
+    font-size: 12px;
+    color: @WhiteColor;
+    opacity: 0.5;
+  }
+}
+
+
